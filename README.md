@@ -50,7 +50,7 @@ In this 4 minute demo we:
 - Build and launch a chain locally
 - Interact with the chain's nameservice logic, settings a name, and retrieving it
 
-Follow [these]() docs to create EMS module
+Follow [these](./Instructions.md) docs to create EMS module
 
 
 #### References
