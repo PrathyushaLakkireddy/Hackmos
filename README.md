@@ -51,3 +51,10 @@ In this 4 minute demo we:
 - Interact with the chain's nameservice logic, settings a name, and retrieving it
 
 Follow [these]() docs to create EMS module
+
+
+#### References
+
+- https://github.com/cosmos/cosmos-sdk
+- https://docs.osmosis.zone/osmosis-core/modules/tokenfactory/
+- https://docs.cosmos.network/main/build/architecture/adr-043-nft-module

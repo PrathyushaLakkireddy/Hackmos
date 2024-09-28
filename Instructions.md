@@ -10,11 +10,11 @@ Building your first Cosmos-SDK blockchain with Spawn.
 ### Generate a New Chain
 
 ```bah
-spawn new eventchain --bech32=event --denom=uevent --bin=eventd --org=rollchains
+spawn new hackmoschain --bech32=hack --denom=uhackmos --bin=hackmosd --org=rollchains
 
-cd eventchain/
+cd hackmoschain/
 
-spawn module new etm
+spawn module new ems
 
 ```
 
@@ -23,7 +23,7 @@ spawn module new etm
 ```bash
 // ResolveName allows a user to resolve the name of an account.
   rpc GetEvent(QueryGetEventRequest) returns (QueryGetEventResponse) {
-    option (google.api.http).get = "/etm/v1/name/{organizer}";
+    option (google.api.http).get = "/ems/v1/name/{organizer}";
   }
   
   
@@ -66,7 +66,7 @@ make proto-gen
 ```
 
 #### Save Storage Structure
-x/etm/keeper.go
+x/ems/keeper.go
 
 You now need to set the data structure in the keeper to store the organizer and event name pair. Keeper's are where the data is stored for future use.
 
@@ -92,7 +92,7 @@ func NewKeeper() Keeper {
 
 Update the msg_server logic to set the event upon request from a user.
 
-x/etm/keeper/msg_server.go
+x/ems/keeper/msg_server.go
 
 ```bash
 // CreateEvent implements types.MsgServer.
@@ -179,12 +179,12 @@ make sh-testnet
 
 Transactions to interact with the etm module
 ```bash
-eventd tx etm -h
+hackmosd tx ems -h
 
-eventd tx etm create vitwit-event-1 --from=acc0
+hackmosd tx ems create vitwit-event-1 --from=acc0
 
-eventd q etm -h
+hackmosd q ems -h
 
-eventd q etm get event1hj5fveer5cjtn4wd6wstzugjfdxzl0xp0a2w8n
+hackmosd q ems get event1hj5fveer5cjtn4wd6wstzugjfdxzl0xp0a2w8n
 
 ```
