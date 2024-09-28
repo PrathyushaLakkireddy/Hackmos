@@ -21,7 +21,6 @@ spawn module new ems
 #### now add query method in query.proto
 
 ```bash
-// ResolveName allows a user to resolve the name of an account.
   rpc GetEvent(QueryGetEventRequest) returns (QueryGetEventResponse) {
     option (google.api.http).get = "/ems/v1/name/{organizer}";
   }
