@@ -10,7 +10,7 @@ Building your first Cosmos-SDK blockchain with Spawn.
 ### Generate a New Chain
 
 ```bah
-spawn new hackmoschain --bech32=hack --denom=uhackmos --bin=hackmosd --org=rollchains
+spawn new hackmoschain --bech32=hackmos --denom=uhackmos --bin=hackmosd --org=rollchains
 
 cd hackmoschain/
 
