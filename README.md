@@ -10,9 +10,9 @@
 
 If you do not have [`go 1.22+`](https://go.dev/doc/install), [`Docker`](https://docs.docker.com/get-docker/), or [`git`](https://git-scm.com/) installed, follow the instructions below.
 
-* [MacOS](./docs/versioned_docs/version-v0.50.x/01-setup/01-system-setup.md#macos)
-* [Windows](./docs/versioned_docs/version-v0.50.x/01-setup/01-system-setup.md#windows)
-* [Ubuntu](./docs/versioned_docs/version-v0.50.x/01-setup/01-system-setup.md#linux-ubuntu)
+* [MacOS](https://github.com/rollchains/spawn/blob/release/v0.50/docs/versioned_docs/version-v0.50.x/01-setup/01-system-setup.md#macos)
+* [Windows](https://github.com/rollchains/spawn/blob/release/v0.50/docs/versioned_docs/version-v0.50.x/01-setup/01-system-setup.md#windows)
+* [Ubuntu](https://github.com/rollchains/spawn/blob/release/v0.50/docs/versioned_docs/version-v0.50.x/01-setup/01-system-setup.md#linux-ubuntu)
 
 
 ### Install Spawn
